@@ -1,0 +1,14 @@
+#this is the config file for bwlimitplugin.so
+
+#default  means all other clients whose cname not specified in the followed list
+default 2048
+
+#config the total rate for tun,which unit is mbps 
+total   1000
+
+#bw limit list
+#user cname  bw(kbps)
+
+user abc      100
+user xyz      1000
+user test      1560
