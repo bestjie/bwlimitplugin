@@ -1,4 +1,5 @@
-该插件是几年前随便写的，后面有空我会着手写一个限速的脚本，不再需要编译过程，敬请期待吧！
+该插件是几年前随便写的，后面有空我会着手写一个基于python开发的功能更加强大和稳定的插件，不再需要编译过程，敬请期待吧！
+新项目的链接：https://github.com/bestjie/bwlimit
 
 # bwlimitplugin
 a plugin for openvpn,which can config bandwith limit for every vpn uer 
