@@ -1,9 +1,11 @@
+该插件是几年前随便写的，后面有空我会着手写一个限速的脚本，不再需要编译过程，敬请期待吧！
+
 # bwlimitplugin
 a plugin for openvpn,which can config bandwith limit for every vpn uer 
 
-1、该功能由插件实现，插件主要实现由服务器端到客户端的下行限速（实际公网环境，下行限速已足够，不需要上行限速，客户端的上行带宽是很低的）；
+1、该功能由插件（编译完成后是一个so文件，将其放到对应的目录后再openvpn的配置文件中指定路径）实现，插件主要实现由服务器端到客户端的下行限速（实际公网环境，下行限速已足够，不需要上行限速，客户端的上行带宽是很低的）；
 
-2、如果启用该功能，需要在主配置文件（vpn1.conf）中添加如下行，引号中的部分为插件的配置文件路径：
+2、如果启用该功能，需要在openvpn的主配置文件（例如：vpn1.conf）中添加如下行，引号中的部分为插件的配置文件路径：
 
 plugin /usr/local/openvpn-2.2.3/lib/bwlimitplugin.so "/usr/local/openvpn-2.2.3/etc/bwlimitplugin.cnf"
 
